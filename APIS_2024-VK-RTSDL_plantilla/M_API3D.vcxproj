@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0922aa6f-c848-4eab-8f02-f6e0c3376f91}</ProjectGuid>
+    <RootNamespace>MAPI3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\externalLibs\glew\include;$(ProjectDir)\externalLibs\glfw\include;$(ProjectDir)\externalLibs\glm\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\externalLibs\glew\include;$(ProjectDir)\externalLibs\glfw\include;$(ProjectDir)\externalLibs\glm\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\externalLibs\glm\inc;..\externalLibs\SDL\include;..\externalLibs\glfw\inc;$(IncludePath);..\externalLibs\glad\inc;..\externalLibs\vulkan\include;..\externalLibs\pugixml\include;..\externalLibs\reactphysics3d\inc</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);..\externalLibs\glm\lib;..\externalLibs\SDL\lib;..\externalLibs\glfw\lib;..\externalLibs\glad\lib;..\externalLibs\vulkan\lib;..\externalLibs\pugixml\lib;..\externalLibs\reactphysics3d\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\externalLibs\glm\inc;..\externalLibs\SDL\include;..\externalLibs\glfw\inc;$(IncludePath);..\externalLibs\glad\inc;..\externalLibs\vulkan\include;..\externalLibs\pugixml\include;..\externalLibs\reactphysics3d\inc</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);..\externalLibs\glm\lib;..\externalLibs\SDL\lib;..\externalLibs\glfw\lib;..\externalLibs\glad\lib;..\externalLibs\vulkan\lib;..\externalLibs\pugixml\lib;..\externalLibs\reactphysics3d\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\externalLibs\glew\lib;$(ProjectDir)\externalLibs\glfw\lib-vc2019;$(ProjectDir)\externalLibs\pugixml\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);OpenGL32.lib;glew32s.lib;glfw3.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\externalLibs\glew\lib;$(ProjectDir)\externalLibs\glfw\lib-vc2019;$(ProjectDir)\externalLibs\pugixml\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);OpenGL32.lib;glew32s.lib;glfw3.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\externalLibs\glfw\lib;..\externalLibs\SDL\lib;..\externalLibs\vulkan\lib;..\externalLibs\pugixml\lib:..\externalLibs\reactphysics3d\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);OpenGL32.lib;glfw3.lib;vulkan-1.lib;pugixmld.lib;glslangd.lib;shadercd.lib;shaderc_utild.lib;shaderc_combinedd.lib;reactphysics3dD.lib;SDL2.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\externalLibs\glfw\lib;..\externalLibs\SDL\lib;..\externalLibs\vulkan\lib;..\externalLibs\pugixml\lib;..\externalLibs\reactphysics3d\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);OpenGL32.lib;glfw3.lib;vulkan-1.lib;pugixml.lib;glslang.lib;shaderc.lib;shaderc_util.lib;shaderc_combined.lib;reactphysics3d.lib;SDL2.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="APIS3D_2024.cpp" />
+    <ClCompile Include="demos.cpp" />
+    <ClCompile Include="demos.h" />
+    <ClCompile Include="mapi\AABB.cpp" />
+    <ClCompile Include="mapi\Armature.cpp" />
+    <ClCompile Include="mapi\BillBoard.cpp" />
+    <ClCompile Include="mapi\Camera.cpp" />
+    <ClCompile Include="mapi\Emitter.cpp" />
+    <ClCompile Include="mapi\Entity.cpp" />
+    <ClCompile Include="mapi\FactoryEngine.cpp" />
+    <ClCompile Include="mapi\GLFWEventManager.cpp" />
+    <ClCompile Include="mapi\GLProgram.cpp" />
+    <ClCompile Include="mapi\GLRender.cpp" />
+    <ClCompile Include="mapi\GLTexture.cpp" />
+    <ClCompile Include="mapi\Light.cpp" />
+    <ClCompile Include="mapi\Material.cpp" />
+    <ClCompile Include="mapi\Mesh.cpp" />
+    <ClCompile Include="mapi\Object3D.cpp" />
+    <ClCompile Include="mapi\Particle.cpp" />
+    <ClCompile Include="mapi\SDLInputManager.cpp" />
+    <ClCompile Include="mapi\SDLProgram.cpp" />
+    <ClCompile Include="mapi\SDLRayTraceRender.cpp" />
+    <ClCompile Include="mapi\SDLTexture.cpp" />
+    <ClCompile Include="mapi\System.cpp" />
+    <ClCompile Include="mapi\VKBufferMemory.cpp" />
+    <ClCompile Include="mapi\VKProgram.cpp" />
+    <ClCompile Include="mapi\VKRender.cpp" />
+    <ClCompile Include="mapi\VKTexture.cpp" />
+    <ClCompile Include="RayTracerImplementar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mapi\AABB.h" />
+    <ClInclude Include="mapi\Armature.h" />
+    <ClInclude Include="mapi\BillBoard.h" />
+    <ClInclude Include="mapi\Camera.h" />
+    <ClInclude Include="mapi\CellGrid.h" />
+    <ClInclude Include="mapi\common.h" />
+    <ClInclude Include="mapi\Emitter.h" />
+    <ClInclude Include="mapi\Entity.h" />
+    <ClInclude Include="mapi\InputManager.h" />
+    <ClInclude Include="mapi\GLFWInputManager.h" />
+    <ClInclude Include="mapi\FactoryEngine.h" />
+    <ClInclude Include="mapi\GLProgram.h" />
+    <ClInclude Include="mapi\GLRender.h" />
+    <ClInclude Include="mapi\GLTexture.h" />
+    <ClInclude Include="mapi\Light.h" />
+    <ClInclude Include="mapi\Material.h" />
+    <ClInclude Include="mapi\Mesh.h" />
+    <ClInclude Include="mapi\Object3D.h" />
+    <ClInclude Include="mapi\Particle.h" />
+    <ClInclude Include="mapi\Render.h" />
+    <ClInclude Include="mapi\RenderProgram.h" />
+    <ClInclude Include="mapi\SDLInputManager.h" />
+    <ClInclude Include="mapi\SDLProgram.h" />
+    <ClInclude Include="mapi\SDLRayTraceRender.h" />
+    <ClInclude Include="mapi\SDLTexture.h" />
+    <ClInclude Include="mapi\System.h" />
+    <ClInclude Include="mapi\Texture.h" />
+    <ClInclude Include="mapi\vertex.h" />
+    <ClInclude Include="mapi\VKBufferMemory.h" />
+    <ClInclude Include="mapi\VKProgram.h" />
+    <ClInclude Include="mapi\VKRender.h" />
+    <ClInclude Include="mapi\VKTexture.h" />
+    <ClInclude Include="mapi\vulkanContext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader.frag" />
+    <None Include="data\shader.vert" />
+    <None Include="data\vkPlane2D.msh" />
+    <None Include="data\vkShader.frag" />
+    <None Include="data\vkShader.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

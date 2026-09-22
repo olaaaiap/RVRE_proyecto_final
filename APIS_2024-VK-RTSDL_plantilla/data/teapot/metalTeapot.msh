@@ -1,0 +1,26 @@
+<mesh>
+	<buffers>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture type="cubeMap" >
+					<layer name="textureColor" >data/skybox1/sky_left.png,data/skybox1/sky_right.png,data/skybox1/sky_front.png,data/skybox1/sky_back.png,data/skybox1/sky_top.png,data/skybox1/sky_bottom.png</layer>
+				</texture>
+				<ka>1.0f</ka>
+				<kd>0.8f</kd>
+				<ks>1.0f</ks>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<light>true</light>
+				<shadow>true</shadow>
+				<shininess>80</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>1.5</refractIndex>
+				<reflection>true</reflection>
+
+			</material>
+			<meshData>data/teapot/teapotClosed.obj</meshData>
+		</buffer>
+	</buffers>
+</mesh>

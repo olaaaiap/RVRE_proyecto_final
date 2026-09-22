@@ -1,0 +1,16 @@
+<pipeline>
+<step>
+	<output>
+		<color>textureColor</color>
+		<depth>textureDepth</depth>
+	</output>
+</step>
+<step>
+	<input>
+		<color>textureDepth</color>	
+	</input>
+	<output>
+		<screen>screen</screen>
+	</output>
+</step>
+</pipeline>

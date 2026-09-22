@@ -1,0 +1,22 @@
+<mesh>
+	<buffers>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<ka>1.0f</ka>
+				<kd>1.0f</kd>
+				<ks>1.0f</ks>
+				<light>true</light>
+				<shadow>true</shadow>
+				<shininess>10</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>1.5</refractIndex>
+				<reflection>true</reflection>
+			</material>
+			<meshData>data/teapot/teapotClosed.obj</meshData>
+		</buffer>
+	</buffers>
+</mesh>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos\data">
+      <UniqueIdentifier>{7966902b-36d0-4d69-9f51-49031cab7bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi">
+      <UniqueIdentifier>{e027f2d0-d5c4-4b32-9f30-536ac1c31e4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\include">
+      <UniqueIdentifier>{27880e26-5455-4729-8b29-dd360a37f3ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\cpp">
+      <UniqueIdentifier>{969c3df2-15ca-46f3-9ca6-c0659cb19a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\cpp\GLSL">
+      <UniqueIdentifier>{8163de99-2fee-487b-92b7-91d0ebab7582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\include\GLSL">
+      <UniqueIdentifier>{77631d11-7a71-4a00-ad64-af210a349821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\include\VK">
+      <UniqueIdentifier>{9dfe4245-fd60-4707-a7c3-4a2d6da8a666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\cpp\VK">
+      <UniqueIdentifier>{34ad4818-87af-4a21-bb54-d0a08ddac71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{0f892bad-6888-4592-8796-e7e2e2c3b490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\cpp\SDL_RT">
+      <UniqueIdentifier>{7c3d0ad0-6c65-4a8a-8feb-0612696926cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapi\include\SDL_RT">
+      <UniqueIdentifier>{8bb5d13f-d14d-494c-b61d-61318ed4eea7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="APIS3D_2024.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\BillBoard.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Camera.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Emitter.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Entity.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Light.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Material.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Mesh.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Particle.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\GLProgram.cpp">
+      <Filter>mapi\cpp\GLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\GLRender.cpp">
+      <Filter>mapi\cpp\GLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\GLTexture.cpp">
+      <Filter>mapi\cpp\GLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\VKTexture.cpp">
+      <Filter>mapi\cpp\VK</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\VKProgram.cpp">
+      <Filter>mapi\cpp\VK</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\VKRender.cpp">
+      <Filter>mapi\cpp\VK</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\VKBufferMemory.cpp">
+      <Filter>mapi\cpp\VK</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\SDLInputManager.cpp">
+      <Filter>mapi\cpp\SDL_RT</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\SDLProgram.cpp">
+      <Filter>mapi\cpp\SDL_RT</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\SDLRayTraceRender.cpp">
+      <Filter>mapi\cpp\SDL_RT</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\SDLTexture.cpp">
+      <Filter>mapi\cpp\SDL_RT</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\AABB.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\FactoryEngine.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\GLFWEventManager.cpp">
+      <Filter>mapi\cpp\GLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\System.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Object3D.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mapi\Armature.cpp">
+      <Filter>mapi\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="demos.h">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="demos.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracerImplementar.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mapi\Armature.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\BillBoard.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Camera.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\common.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Emitter.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Entity.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Light.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Material.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Mesh.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Object3D.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Particle.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\System.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\vertex.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\GLProgram.h">
+      <Filter>mapi\include\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\GLRender.h">
+      <Filter>mapi\include\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\GLTexture.h">
+      <Filter>mapi\include\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\VKTexture.h">
+      <Filter>mapi\include\VK</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\VKProgram.h">
+      <Filter>mapi\include\VK</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\VKRender.h">
+      <Filter>mapi\include\VK</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\vulkanContext.h">
+      <Filter>mapi\include\VK</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\VKBufferMemory.h">
+      <Filter>mapi\include\VK</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\SDLInputManager.h">
+      <Filter>mapi\include\SDL_RT</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\SDLProgram.h">
+      <Filter>mapi\include\SDL_RT</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\SDLRayTraceRender.h">
+      <Filter>mapi\include\SDL_RT</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\SDLTexture.h">
+      <Filter>mapi\include\SDL_RT</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\CellGrid.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\AABB.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\FactoryEngine.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\GLFWInputManager.h">
+      <Filter>mapi\include\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\InputManager.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\RenderProgram.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Render.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi\Texture.h">
+      <Filter>mapi\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\vkShader.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\vkShader.vert">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\vkPlane2D.msh">
+      <Filter>Archivos de recursos\data</Filter>
+    </None>
+    <None Include="data\shader.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\shader.vert">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+<pipeline>
+<step>
+
+	<output>
+		<screen>screen</screen>
+	</output>
+</step>
+</pipeline>

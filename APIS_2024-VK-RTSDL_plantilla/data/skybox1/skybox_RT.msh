@@ -1,0 +1,112 @@
+<mesh>
+	<buffers>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture type="color2D" >
+					<layer name="textureColor" >data/skybox1/sky_left.png</layer>
+				</texture>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<light>false</light>
+				<shadow>false</shadow>
+				<shininess>1</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>0.9</refractIndex>
+				<reflection>false</reflection>
+			</material>
+			<meshData>data/skybox1/skybox_L.obj</meshData>
+		</buffer>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture type="color2D" >
+					<layer name="textureColor" >data/skybox1/sky_right.png</layer>
+				</texture>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<light>false</light>
+				<shadow>false</shadow>
+				<shininess>1</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>0.9</refractIndex>
+				<reflection>false</reflection>
+			</material>
+			<meshData>data/skybox1/skybox_R.obj</meshData>
+		</buffer>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture type="color2D" >
+					<layer name="textureColor" >data/skybox1/sky_bottom.png</layer>
+				</texture>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<light>false</light>
+				<shadow>false</shadow>
+				<shininess>1</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>0.9</refractIndex>
+				<reflection>false</reflection>
+			</material>
+			<meshData>data/skybox1/skybox_Bottom.obj</meshData>
+		</buffer>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture type="color2D" >
+					<layer name="textureColor" >data/skybox1/sky_top.png</layer>
+				</texture>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<light>false</light>
+				<shadow>false</shadow>
+				<shininess>1</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>0.9</refractIndex>
+				<reflection>false</reflection>
+			</material>
+			<meshData>data/skybox1/skybox_Top.obj</meshData>
+		</buffer>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture type="color2D" >
+					<layer name="textureColor" >data/skybox1/sky_back.png</layer>
+				</texture>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<light>false</light>
+				<shadow>false</shadow>
+				<shininess>1</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>0.9</refractIndex>
+				<reflection>false</reflection>
+			</material>
+			<meshData>data/skybox1/skybox_Back.obj</meshData>
+		</buffer>
+		<buffer>
+			<material>
+				<color>1,1,1,1</color>
+				<texture type="color2D" >
+					<layer name="textureColor" >data/skybox1/sky_front.png</layer>
+				</texture>
+				<shader>data/shader.vert,data/shader.frag</shader>
+				<depthWrite>true</depthWrite>
+				<light>false</light>
+				<shadow>false</shadow>
+				<shininess>1</shininess>
+				<blendMode>none</blendMode>
+				<refraction>false</refraction>
+				<refractIndex>0.9</refractIndex>
+				<reflection>false</reflection>
+			</material>
+			<meshData>data/skybox1/skybox_Front.obj</meshData>
+		</buffer>
+	</buffers>
+</mesh>
