@@ -1,24 +1,28 @@
-# Ray tracer en C++ sobre un motor gráfico multi-backend
+# RVRE · Ray tracer en C++ sobre un motor gráfico multi-backend
 
-> Proyecto final de la asignatura **RVRE**
-> Autora: **Olaia Picabea Sainz** · C++ · GLM · SDL2 · OpenMP
+**Núcleo de iluminación de un ray tracer por CPU en C++: iluminación difusa y especular, sombras suaves, reflexión recursiva y refracción, dentro de un motor gráfico con backends de OpenGL, Vulkan y ray tracing por software.**
 
-He implementado el núcleo de iluminación de un **ray tracer por CPU** dentro de un motor gráfico en C++. El motor se proporcionó como plantilla en la asignatura y puede renderizar la misma escena con varios backends: OpenGL, Vulkan y ray tracing por software con SDL.
-
-Mi parte es el cálculo del color de cada rayo:
-
-- iluminación difusa y especular
-- sombras suaves
-- reflexión recursiva
-- refracción en materiales transparentes
+Es el proyecto final de la asignatura RVRE del máster. He implementado el núcleo de iluminación de un **ray tracer por CPU** dentro de un motor gráfico en C++. El motor se proporcionó como plantilla en la asignatura y puede renderizar la misma escena con varios backends: OpenGL, Vulkan y ray tracing por software con SDL.
 
 ![Render de la escena skybox: tetera metálica y Suzanne de cristal](docs/img/render_skybox.png)
 
----
+## Enlaces
 
-## Qué he implementado
+- 💻 **Implementación del ray tracer:** [`RayTracerImplementar.cpp`](APIS_2024-VK-RTSDL_plantilla/RayTracerImplementar.cpp)
+- 🎞️ **Animación renderizada:** [`render_animado.gif`](docs/img/render_animado.gif)
 
-Todo mi trabajo está en [`RayTracerImplementar.cpp`](APIS_2024-VK-RTSDL_plantilla/RayTracerImplementar.cpp). El resto del motor (`mapi/`) es la plantilla de la asignatura.
+## Mi aportación
+
+Mi parte es el cálculo del color de cada rayo. Todo mi trabajo está en [`RayTracerImplementar.cpp`](APIS_2024-VK-RTSDL_plantilla/RayTracerImplementar.cpp). El resto del motor (`mapi/`) es la plantilla de la asignatura.
+
+| Parte | Qué hace | Técnica |
+|---|---|---|
+| **Iluminación** | Calcula la luz que recibe cada punto según el tipo de emisor | Lambert (difusa) + Phong (especular) |
+| **Sombras suaves** | Genera penumbra en los bordes de las sombras | Muestreo de una rejilla sobre el área de la luz |
+| **Reflexión** | Refleja el entorno en los materiales pulidos | Rayos recursivos con `glm::reflect` |
+| **Refracción** | Simula materiales transparentes como el cristal | Ley de Snell con `glm::refract` y reflexión total interna |
+
+## Detalle de la implementación
 
 ### Iluminación (`computeLambertLight`)
 
@@ -84,6 +88,21 @@ El ray tracer lanza los rayos de cada píxel en paralelo con `#pragma omp parall
 
 La práctica incluía también una parte opcional de **iluminación global por mapeo de fotones (photon mapping) y cáusticas** (`tracePhoton` y el bloque *Global light*), además de la **atenuación lineal** de la luz. Esas partes quedan como trabajo futuro, por eso las escenas Cornell box no tienen iluminación indirecta.
 
+## Lo que he aprendido
+
+- Cómo funciona un ray tracer de Whitted: rayos primarios, rayos de sombra, y rebotes recursivos de reflexión y refracción con un límite de profundidad.
+- Modelos de iluminación locales (Lambert y Phong) aplicados punto a punto, fuera del pipeline de shaders.
+- Aspectos físicos de la refracción: índices de refracción, entrada y salida de objetos, reflexión total interna.
+- Problemas prácticos de precisión numérica (*shadow acne*, autointersecciones) y el coste de calidad frente a rendimiento de las sombras suaves y el antialiasing.
+
+## Tecnologías
+
+- **C++**
+- **GLM** para el álgebra vectorial (`reflect`, `refract`, productos escalares)
+- **SDL2** para mostrar el render del ray tracer
+- **OpenMP** para paralelizar el trazado de rayos por píxel
+- **OpenGL 4 + GLFW** y **Vulkan** como backends del motor
+
 ## Contenido del repositorio
 
 - `APIS_2024-VK-RTSDL_plantilla/RayTracerImplementar.cpp`: implementación del ray tracer (mi trabajo).
@@ -91,11 +110,8 @@ La práctica incluía también una parte opcional de **iluminación global por m
 - `APIS_2024-VK-RTSDL_plantilla/mapi/`: motor gráfico (plantilla de la asignatura).
 - `APIS_2024-VK-RTSDL_plantilla/data/`: mallas, texturas, skyboxes, shaders y configuración de pipelines.
 - `APIS_2024-VK-RTSDL_plantilla/out*.ppm`: fotogramas renderizados.
-- `docs/img/`: imágenes de este README.
+- [`docs/img/`](docs/img): imágenes de este README.
 
-## Lo que he aprendido
+## Autora
 
-- Cómo funciona un ray tracer de Whitted: rayos primarios, rayos de sombra, y rebotes recursivos de reflexión y refracción con un límite de profundidad.
-- Modelos de iluminación locales (Lambert y Phong) aplicados punto a punto, fuera del pipeline de shaders.
-- Aspectos físicos de la refracción: índices de refracción, entrada y salida de objetos, reflexión total interna.
-- Problemas prácticos de precisión numérica (*shadow acne*, autointersecciones) y el coste de calidad frente a rendimiento de las sombras suaves y el antialiasing.
+Olaia Picabea Sainz
