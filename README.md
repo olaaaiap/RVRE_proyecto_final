@@ -51,42 +51,6 @@ En lugar de sombras duras (un único rayo de visibilidad hacia la luz), muestreo
 - Mantengo el estado *inside* del rayo en cada rebote, para que funcione con objetos cerrados como Suzanne de cristal.
 - Mezclo el color refractado con el del objeto y añado el brillo especular en el primer impacto.
 
-## Escenas de demostración
-
-`demos.cpp` define varias escenas. La que se ejecuta por defecto en `APIS3D_2024.cpp` es `skybox1RT()`:
-
-- tetera **metálica** (reflexión)
-- Suzanne de **cristal** (refracción)
-- cubo con **normal map**
-- skybox
-
-Se renderiza a 720 × 480 con antialiasing, reflexión y refracción activados.
-
-El render escribe cada fotograma en un archivo `.ppm`. La animación está hecha con los 72 fotogramas generados mientras se mueve la cámara:
-
-![Secuencia de fotogramas renderizados](docs/img/render_animado.gif)
-
-Otras escenas disponibles en `demos.cpp`:
-
-- **Ray tracing:** Cornell box con esferas de metal y cristal, con una tetera de cristal y con un conejo de cristal (`cornellBox1/2/3`).
-- **OpenGL:** ciudad asiática, shadow mapping, sistema de partículas, animación esquelética.
-- **Vulkan:** demo básica.
-
-## El motor
-
-El motor (`mapi/`) abstrae el backend gráfico detrás de una `FactoryEngine`. El backend se elige al arrancar con `System::initSystem(backend_e::...)`:
-
-| Backend | Tecnología |
-|---|---|
-| `GL4` | OpenGL 4 + GLFW |
-| `VK` | Vulkan + shaderc/glslang |
-| `RT_SDL` | Ray tracing por CPU, mostrado con SDL2 y paralelizado con **OpenMP** |
-
-El ray tracer lanza los rayos de cada píxel en paralelo con `#pragma omp parallel for`. Con antialiasing activado renderiza al doble de resolución, y acelera las colisiones con cajas envolventes (AABB) por malla.
-
-## Alcance
-
-La práctica incluía también una parte opcional de **iluminación global por mapeo de fotones (photon mapping) y cáusticas** (`tracePhoton` y el bloque *Global light*), además de la **atenuación lineal** de la luz. Esas partes quedan como trabajo futuro, por eso las escenas Cornell box no tienen iluminación indirecta.
 
 ## Lo que he aprendido
 
@@ -99,9 +63,7 @@ La práctica incluía también una parte opcional de **iluminación global por m
 
 - **C++**
 - **GLM** para el álgebra vectorial (`reflect`, `refract`, productos escalares)
-- **SDL2** para mostrar el render del ray tracer
-- **OpenMP** para paralelizar el trazado de rayos por píxel
-- **OpenGL 4 + GLFW** y **Vulkan** como backends del motor
+- **OpenGL 4 + GLFW** como backend del motor
 
 ## Contenido del repositorio
 
