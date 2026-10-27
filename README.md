@@ -1,4 +1,4 @@
-# RVRE · Ray tracer en C++ sobre un motor gráfico multi-backend
+# RVRE - Sistema Ray tracer en C++ OpenGL
 
 **Núcleo de iluminación de un ray tracer por CPU en C++: iluminación difusa y especular, sombras suaves, reflexión recursiva y refracción, dentro de un motor gráfico con backends de OpenGL, Vulkan y ray tracing por software.**
 
